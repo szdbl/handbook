@@ -1,0 +1,31 @@
+
+
+magic %
+%load... - one line
+%%  - one cell 
+
+!<cmd>
+pivot table, youtube
+
+content navigate (on tool bar)
+
+comment block: ctrl+/(slash)
+
+navigate around input/output: _i6
+
+auto complete: tab
+	. complete
+	function def: shift+tab; shift+tab, tab; shift tab*3 
+
+
+side:
+Shiny on the web
+
+
+sharing:
+	html
+	github gist
+
+syntax highlght
+
+sublime text in jupyter
