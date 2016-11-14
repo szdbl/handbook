@@ -1,26 +1,9 @@
-'???'
-
-'!!!'
+'0 Reminders'
 	Single quote: SQL uses two single quotes to represent one in a string.
 	NULL wont join! 
 	N/A: to label as int -> 999; char -> ''(''<>NULL)
 	Estimated (ctrl+L) / actual execution plan 
-	ALWAYS remember to order by !!! SQL tables do not keep order 
-
-'VRSK'
-	--shortcuts
-		Shortcuts in studio: Tools->Option->short cuts/formating 
-			ctrl+3 top 100 *
-			ctrl+4 *
-			ctrl+5 count(1)
-	--common tables:
-		select top 5 * from User_Temp_DB1.dbo.IP_AmbestCompanyMap --AMBest Mapping
-	--Procedures:
-		QPC queries: qpc_single utilities in sz_SQL (S:\_Analytics\Utilities\Single Utilities.sql)
-		work.dbo.CleanForXml
-		work.dbo.AllColNames
-
-SQL --------------------------------------------------------------------------------------------------------------------------------------------
+	remember to order by !!! SQL tables do not keep order 
 
 '1 General, Misc'
 	--show linked servers

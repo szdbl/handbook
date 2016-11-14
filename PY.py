@@ -1,53 +1,5 @@
-'???'
-
-'Keep in mind'
+'0 Reminders'
 	# scoping rules: function and loop create local scopes for variables. You need to access the raw/global variable to change value!!
-
-'Cmd'
-	# navigate, exploration
-	open <path>
-	ls <path>
-	which <...> # return path of sommething in current folder
-	locate -b  # return path of something outside current folder
-
-'Sublime'
-	# shortcuts
-	AlignTab # package used for alignment 
-	Ctrl + J  #join sentence, transpose column to a line
-	Ctrl + ` # console, Esc to exit 
-	Ctrl + Alt + A # alginment shortcut for Alignment package
-	Ctrl + Shift + P # open Command Palette, Eg used to open AlignTab command 
-	Ctrl + B # run script on build
-	Ctrl + Shift + up/down arrow | Alt + cursor selection # vertical column seletction
-	Alt + arrow # jump by word
-	Cmd + arrow # jump by line
-	Cmd + D # multi cursor - next occurence, click more to add more
-	Cmd + Ctrl + G # multi cursor - all occurences
-	Cmd + Ctrl + arrow # swap lines
-	Cmd + K, 1 (J) # fold (collapse) all codes at this level
-	Cmd + arrow # jump to line end
-	Cmd + i # incremental search - find and jump to next match
-
-'Jupyter notebook'
-	# shortcuts
-		Ctrl+Enter # run the current cell and stay
-		Ctrl+/ # comment block
-
-	# setting
-		# enable code folding 
-		import notebook
-		E = notebook.nbextensions.EnableNBExtensionApp()
-		E.enable_nbextension('usability/codefolding/main')
-
-		# display more
-		pd.set_option('display.max_rows', 500)  # Jupyter display setting
-		pd.set_option('display.max_columns', None)
-		
-		# change default startup directory: create config file, uncomment and add url below
-		$ jupyter notebook --generate-config # run it to create config file (it's in ~/.jupyter)
-		c.NotebookApp.notebook_dir=u''
-
-PYTHON ###############################################################################################################
 
 '1 General, Misc'
 	functions (code called by name) vs method (code called by name for an object) 
@@ -127,7 +79,24 @@ PYTHON #########################################################################
 	float('inf') # infinity
 	datetime.datetime.strptime(date_string, format1).strftime(format2) # time / date format
 
-'5 Functions'
+'5 Module, class'
 	# map
 		map(lambda x: 1 if x > 5 else 0)
 
+	# class
+		class ppl:
+		    def __init__(self, FN, LN):
+		        self.fullname = FN + ' ' + LN
+		        self.val = 100
+		        self.cars = []
+		    def double(self):
+		        self.val = self.val*2
+		    def add(self, car):
+		        self.cars.append(car)
+		        
+		a = ppl('Joe', 'Smith')
+		b = ppl('Tim', 'Scott')
+		b.add('C63')
+		b.double()
+		print a.fullname, a.cars, a.val
+		print b.fullname, b.cars, b.val
